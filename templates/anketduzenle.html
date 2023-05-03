@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Anket Sayfası</title>
+  </head>
+  <body>
+    <h1>Anket Düzenlemesi</h1>
+    <form method="POST" action="http://127.0.0.1:8080/create">
+       <p>Anket yapacağınız alanı seçin</p>
+      <select class="form-control" name="anket_alani">
+        <option value="Finans">Finans</option>
+        <option value="Sağlık">Sağlık</option>
+        <option value="Teknoloji">Teknoloji</option>
+      </select>
+      <br>
+      <p>Anket kac gun gecerli olacak?</p>
+       <label for="anket_suresi">Anket (date and time):</label>
+  <input class="form-control" type="datetime-local" id="anket_suresi" name="anket_suresi">
+      <br>
+      <p>Ankette kac soru olacak?</p>
+      <select class="form-control" name="soru_sayisi">
+        <option value="1">1 soru</option>
+        <option value="2">2 soru</option>
+        <option value="3">3 soru</option>
+        <option value="4">4 soru</option>
+        <option value="5">5 soru</option>
+        <option value="6">6 soru</option>
+        <option value="7">7 soru</option>
+        <option value="8">8 soru</option>
+        <option value="9">9 soru</option>
+        <option value="10">10 soru</option>
+      </select>
+      <br>
+      <p>Ankette cevaplar kaç secenekli olacak?</p>
+      <select class="form-control" name="cevap_sayisi">
+        <option value="1">1 cevap</option>
+        <option value="2">2 cevap</option>
+        <option value="3">3 cevap</option>
+        <option value="4">4 cevap</option>
+        <option value="5">5 cevap</option>
+        <option value="6">6 cevap</option>
+        <option value="7">7 cevap</option>
+        <option value="8">8 cevap</option>
+        <option value="9">9 cevap</option>
+        <option value="10">10 cevap</option>
+      </select>
+      <br>
+      <br>
+        <input  class="btn btn-primary" id="my_submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
+
+
+
+
+
